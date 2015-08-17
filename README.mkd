@@ -1,0 +1,62 @@
+# gnome-terminal-colors-monokai
+
+These scripts set the GNOME terminal color scheme to match the original Monokai
+colors for Textmate by Wimer Hazenburg
+(http://www.monokai.nl/blog/2006/07/15/textmate-color-theme/).
+
+The GNOME terminal palette used is from oneKelvinSmith's repository monokai
+(https://github.com/oneKelvinSmith/monokai). The scripts to change the palette
+are from Anthony25's repository
+(https://github.com/Anthony25/gnome-terminal-colors-solarized).
+
+Installation and usage
+----------------------
+
+To be able to uninstall, we highly recommend that you create a new GNOME
+Terminal profile, using the menus in GNOME Terminal.
+
+You need the `dconf` command (if you run a recent GNOME version). With Ubuntu,
+this can be installed by running
+
+    $ sudo apt-get install dconf-cli
+
+Then you can run the installation script:
+
+    $ ./install.sh
+
+And just follow the instructions.
+
+You can also run the `set_original.sh` script to directly set the dark or light
+monokai theme to the actived gnome-terminal profile.
+
+Uninstall
+---------
+
+Change to another profile in GNOME Terminal, then remove the Monokai profile
+by running:
+
+### GNOME 3.6 or lower
+
+    $ rm -r ~/.gconf/apps/gnome-terminal/profiles/Monokai
+
+### GNOME 3.8 or higher
+
+Be sure to have the dconf-cli package installed and do:
+
+    $ dconf reset -f /org/gnome/terminal/legacy/profiles:/PROFILE_ID"
+
+Replace PROFILE_ID by your profile ID (you can get it in your profile
+configuration in gnome-terminal).
+
+Themes
+------
+
+Each theme has is own folder in the `colors` dir. It contains 5 files:
+
+  * bd_color: bold color
+  * bg_color: background color
+  * fg_color: foreground color
+  * palette: palette for dconf
+
+No additional configuration is needed to add a theme, the installation script
+just list at launch the children folders in the `colors` dir.
