@@ -62,4 +62,6 @@ MIT.
 Can I add Monokai theme alternatives or request changes?
 --------------------------------------------------------
 
-Sure! Just submit a merge request and I'll get to it as soon as I can.
+Sure! Just submit a merge request and I'll get to it as soon as I can. For new
+themes, just add a new directory in colors/ with the same structure as
+colors/original/.
