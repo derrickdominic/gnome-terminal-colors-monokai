@@ -1,3 +1,3 @@
-# Official dark solarized colorscheme
+# Monokai color scheme
 
-http://ethanschoonover.com/solarized
+Palette from https://github.com/oneKelvinSmith/monokai

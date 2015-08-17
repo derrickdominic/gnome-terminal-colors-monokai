@@ -1,4 +1,5 @@
-# gnome-terminal-colors-monokai
+gnome-terminal-colors-monokai
+=============================
 
 These scripts set the GNOME terminal color scheme to match the original Monokai
 colors for Textmate by Wimer Hazenburg
@@ -7,7 +8,8 @@ colors for Textmate by Wimer Hazenburg
 The GNOME terminal palette used is from oneKelvinSmith's repository monokai
 (https://github.com/oneKelvinSmith/monokai). The scripts to change the palette
 are from Anthony25's repository
-(https://github.com/Anthony25/gnome-terminal-colors-solarized).
+(https://github.com/Anthony25/gnome-terminal-colors-solarized). Check
+them out!
 
 Installation and usage
 ----------------------
@@ -32,15 +34,6 @@ monokai theme to the actived gnome-terminal profile.
 Uninstall
 ---------
 
-Change to another profile in GNOME Terminal, then remove the Monokai profile
-by running:
-
-### GNOME 3.6 or lower
-
-    $ rm -r ~/.gconf/apps/gnome-terminal/profiles/Monokai
-
-### GNOME 3.8 or higher
-
 Be sure to have the dconf-cli package installed and do:
 
     $ dconf reset -f /org/gnome/terminal/legacy/profiles:/PROFILE_ID"
@@ -60,3 +53,13 @@ Each theme has is own folder in the `colors` dir. It contains 5 files:
 
 No additional configuration is needed to add a theme, the installation script
 just list at launch the children folders in the `colors` dir.
+
+License
+-------
+
+MIT.
+
+Can I add Monokai theme alternatives or request changes?
+--------------------------------------------------------
+
+Sure! Just submit a merge request and I'll get to it as soon as I can.
