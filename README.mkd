@@ -1,6 +1,14 @@
 gnome-terminal-colors-monokai
 =============================
 
+WARNING: Archived
+----------------------
+
+This repo has not been updated for later versions of Gnome Terminal. Use https://github.com/0xcomposure/monokai-gnome-terminal instead.
+
+Overview
+----------------------
+
 These scripts set the GNOME terminal color scheme to match the original Monokai
 colors for Textmate by Wimer Hazenburg
 (http://www.monokai.nl/blog/2006/07/15/textmate-color-theme/).
